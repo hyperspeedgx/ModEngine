@@ -114,7 +114,7 @@ LPVOID tVirtualAlloc(
 	{
 		ApplyDS3SekiroAllocatorLimitPatch();
 		//onSteamInit();
-		gPatchedAllocatorLimits = 
+		gPatchedAllocatorLimits = false;
 	}
 	return fpVirtualAlloc(lpAddress, dwSize, flAllocationType, flProtect);
 }
