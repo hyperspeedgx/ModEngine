@@ -273,7 +273,6 @@ const LPCWSTR AppWindowTitleSekiro = L"Sekiro"; // Targeted D11 Application Wind
 DWORD WINAPI MainThread(HMODULE hModule)
 {
 	//Sleep(1000);
-	ApplyDS3SekiroAllocatorLimitPatch();
 	if (GetGameType() == GAME_DARKSOULS_3)
 	{
 		while (FindWindowW(0, AppWindowTitleDS3) == NULL)
